@@ -17,9 +17,9 @@ import logisticspipes.proxy.cofh.subproxies.ICoFHEnergyStorage;
 
 public class LogisticsRFPowerProviderTileEntity extends LogisticsPowerProviderTileEntity {
 
-	public static final int MAX_STORAGE = 10000000;
+	public static final int MAX_STORAGE = 150000000;
 	public static final int MAX_MAXMODE = 8;
-	public static final int MAX_PROVIDE_PER_TICK = 10000; //TODO
+	public static final int MAX_PROVIDE_PER_TICK = 100000000; //TODO
 
 	private IEnergyStorage energyInterface = new IEnergyStorage() {
 
@@ -57,7 +57,7 @@ public class LogisticsRFPowerProviderTileEntity extends LogisticsPowerProviderTi
 	private ICoFHEnergyStorage storage;
 
 	public LogisticsRFPowerProviderTileEntity() {
-		storage = SimpleServiceLocator.powerProxy.getEnergyStorage(10000);
+		storage = SimpleServiceLocator.powerProxy.getEnergyStorage(MAX_PROVIDE_PER_TICK);
 	}
 
 	public void addEnergy(double amount) {

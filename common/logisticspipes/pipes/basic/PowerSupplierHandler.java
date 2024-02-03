@@ -19,7 +19,7 @@ import network.rs485.logisticspipes.world.WorldCoordinatesWrapper;
 
 public class PowerSupplierHandler {
 
-	private static final double INTERNAL_RF_BUFFER_MAX = 10000;
+	private static final double INTERNAL_RF_BUFFER_MAX = 100000000;
 	private static final double INTERNAL_IC2_BUFFER_MAX = 2048 * 4;
 
 	private final CoreRoutedPipe pipe;
